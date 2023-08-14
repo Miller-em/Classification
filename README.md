@@ -23,3 +23,7 @@ python gen_label.py
 ```
 
 ## 3. How to use 
+1. Train
+
+
+2. Predict
