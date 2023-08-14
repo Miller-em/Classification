@@ -25,5 +25,24 @@ python gen_label.py
 ## 3. How to use 
 1. Train
 
+We can train our model using this command:
+```bash
+python train.py --batch_size 16 --n_epoches 20 --pretrain False --save_log_dir "Logs/vit_test"
+```
+you know, options: **batch_size** is dataloader's batch size; **n_epoches** is the number of training epoches;
+**pretrain** is False means not using a pre-trained model, while setting it to True means using a pre-trained model.
+**save_log_dir** is the dir path of save log file.
+
+Additionally, if you want to use the checkpoint resume function, use the following command:
+```bash
+python train.py --resume_from True
+```
+
 
 2. Predict
+
+If you want to use a trained model to predict images, please read the "predict.py" file and modify the paths for the model
+file and the image you want to predict. After that, use the following command:
+```bash
+python predict.py
+```

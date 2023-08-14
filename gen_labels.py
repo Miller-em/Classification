@@ -2,7 +2,7 @@ import os
 import csv
 
 # 根据你自己的实际路径进行调整
-train_dir = 'G:/Projects/Classfication/dogs-vs-cats/train'
+train_dir = 'G:/Projects/Classification/dogs-vs-cats/train'
 
 # 获取文件夹下的所有图像文件
 image_files = [f for f in os.listdir(train_dir) if f.endswith('.jpg')]
