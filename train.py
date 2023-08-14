@@ -7,12 +7,14 @@ from torch.utils.data import DataLoader
 from dataset import CatandDogDataset
 from models.vit import ViT
 from utils import get_parse, get_transforms, get_logger, saveModel
+from torch.utils.tensorboard import SummaryWriter
 
-def train_one_epoch(logger, epoch, n_epochs, model, criterion, optimizer, scheduler, train_loader, device):
+def train_one_epoch(logger, epoch, n_epochs, model, criterion, optimizer, scheduler, train_loader, writer, device):
     model.train()
     total_step = len(train_loader)
     losses = []
     running_loss = 0.0
+    step = 0
 
     for batch_idx, (data, target) in enumerate(train_loader):
         data = data.to(device)
@@ -29,6 +31,10 @@ def train_one_epoch(logger, epoch, n_epochs, model, criterion, optimizer, schedu
         loss.backward()
         optimizer.step()
 
+        # Draw
+        writer.add_scalar("Training Loss", loss.item(), global_step=step)
+        step += 1
+
         if (batch_idx+1) % 100 == 0:
             logger.info(f"Epoch [{epoch}/{n_epochs}], Step [{batch_idx+1}/{total_step}], LR = {optimizer.state_dict()['param_groups'][0]['lr']}, Loss = {running_loss/100:.4f}")
             running_loss = 0.0
@@ -40,7 +46,7 @@ def train_one_epoch(logger, epoch, n_epochs, model, criterion, optimizer, schedu
 
 
 @torch.no_grad()
-def evaluate(logger, model, test_loader, device):
+def evaluate(epoch, logger, model, test_loader, writer, device):
     logger.info('Stating to evaluate .........................')
     model.eval()
     num_correct = 0
@@ -57,6 +63,7 @@ def evaluate(logger, model, test_loader, device):
 
     logger.info(f"Got {num_correct}/{num_total} with accuracy {float(num_correct) / float(num_total) * 100:.2f}")
     eval_acc = float(num_correct) / float(num_total)
+    writer.add_scalar("Evaluate Accuracy", eval_acc, global_step=epoch)  # write to tensorboard
     return eval_acc
 
 def main(args):
@@ -102,13 +109,16 @@ def main(args):
     # get logger
     logger = get_logger(args.save_log_dir)
 
+    # writer
+    writer = SummaryWriter(f"runs/dogs-vs-cats/")
+
     for epoch in range(start_epoch, args.n_epoches+1):
         # train
-        train_one_epoch(logger, epoch, args.n_epoches, model, criterion, optimizer, scheduler, train_loader, device)
+        train_one_epoch(logger, epoch, args.n_epoches, model, criterion, optimizer, scheduler, train_loader, writer, device)
 
         # eval
         if epoch % args.eval_iterval == 0:
-            acc = evaluate(logger, model, test_loader, device)
+            acc = evaluate(epoch, logger, model, test_loader, writer, device)
             if acc > best_acc:
                 best_acc = acc
                 saveModel(logger, model, optimizer, scheduler, epoch, best_acc, "vit_best.pth")

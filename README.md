@@ -23,7 +23,7 @@ python gen_label.py
 ```
 
 ## 3. How to use 
-1. Train
+1. **Train**
 
 We can train our model using this command:
 ```bash
@@ -39,7 +39,7 @@ python train.py --resume_from True
 ```
 
 
-2. Predict
+2. **Predict**
 
 If you want to use a trained model to predict images, please read the "predict.py" file and modify the paths for the model
 file and the image you want to predict. After that, use the following command:
