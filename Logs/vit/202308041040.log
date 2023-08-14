@@ -1,0 +1,15 @@
+2023-08-04 10:41:15,551 - train.py[line:34] - INFO: Epoch [1/20], Step [100/1250], LR = 0.001, Loss = 0.9531
+2023-08-04 10:41:48,221 - train.py[line:34] - INFO: Epoch [1/20], Step [200/1250], LR = 0.001, Loss = 0.7870
+2023-08-04 10:42:21,131 - train.py[line:34] - INFO: Epoch [1/20], Step [300/1250], LR = 0.001, Loss = 0.7249
+2023-08-04 10:42:54,836 - train.py[line:34] - INFO: Epoch [1/20], Step [400/1250], LR = 0.001, Loss = 0.6968
+2023-08-04 10:43:28,815 - train.py[line:34] - INFO: Epoch [1/20], Step [500/1250], LR = 0.001, Loss = 0.7271
+2023-08-04 10:44:02,020 - train.py[line:34] - INFO: Epoch [1/20], Step [600/1250], LR = 0.001, Loss = 0.8024
+2023-08-04 10:44:35,584 - train.py[line:34] - INFO: Epoch [1/20], Step [700/1250], LR = 0.001, Loss = 0.7644
+2023-08-04 10:45:05,888 - train.py[line:34] - INFO: Epoch [1/20], Step [800/1250], LR = 0.001, Loss = 0.7192
+2023-08-04 10:45:38,585 - train.py[line:34] - INFO: Epoch [1/20], Step [900/1250], LR = 0.001, Loss = 0.7603
+2023-08-04 10:46:12,703 - train.py[line:34] - INFO: Epoch [1/20], Step [1000/1250], LR = 0.001, Loss = 0.7091
+2023-08-04 10:46:46,508 - train.py[line:34] - INFO: Epoch [1/20], Step [1100/1250], LR = 0.001, Loss = 0.7177
+2023-08-04 10:47:19,572 - train.py[line:34] - INFO: Epoch [1/20], Step [1200/1250], LR = 0.001, Loss = 0.6933
+2023-08-04 10:47:36,234 - train.py[line:39] - INFO: mean_loss: 0.75
+2023-08-04 10:48:06,563 - train.py[line:34] - INFO: Epoch [2/20], Step [100/1250], LR = 0.001, Loss = 0.7100
+2023-08-04 10:48:37,063 - train.py[line:34] - INFO: Epoch [2/20], Step [200/1250], LR = 0.001, Loss = 0.7156

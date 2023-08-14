@@ -1,0 +1,52 @@
+2023-08-04 14:49:47,205 - train.py[line:33] - INFO: Epoch [1/20], Step [100/1250], LR = 0.001, Loss = 0.1779
+2023-08-04 14:50:00,800 - train.py[line:33] - INFO: Epoch [1/20], Step [200/1250], LR = 0.001, Loss = 0.0632
+2023-08-04 14:50:14,448 - train.py[line:33] - INFO: Epoch [1/20], Step [300/1250], LR = 0.001, Loss = 0.0536
+2023-08-04 14:50:28,078 - train.py[line:33] - INFO: Epoch [1/20], Step [400/1250], LR = 0.001, Loss = 0.0345
+2023-08-04 14:50:41,750 - train.py[line:33] - INFO: Epoch [1/20], Step [500/1250], LR = 0.001, Loss = 0.0338
+2023-08-04 14:50:55,458 - train.py[line:33] - INFO: Epoch [1/20], Step [600/1250], LR = 0.001, Loss = 0.0386
+2023-08-04 14:51:09,304 - train.py[line:33] - INFO: Epoch [1/20], Step [700/1250], LR = 0.001, Loss = 0.0286
+2023-08-04 14:51:23,229 - train.py[line:33] - INFO: Epoch [1/20], Step [800/1250], LR = 0.001, Loss = 0.0270
+2023-08-04 14:51:37,202 - train.py[line:33] - INFO: Epoch [1/20], Step [900/1250], LR = 0.001, Loss = 0.0308
+2023-08-04 14:51:51,327 - train.py[line:33] - INFO: Epoch [1/20], Step [1000/1250], LR = 0.001, Loss = 0.0359
+2023-08-04 14:52:05,454 - train.py[line:33] - INFO: Epoch [1/20], Step [1100/1250], LR = 0.001, Loss = 0.0372
+2023-08-04 14:52:19,686 - train.py[line:33] - INFO: Epoch [1/20], Step [1200/1250], LR = 0.001, Loss = 0.0265
+2023-08-04 14:52:26,800 - train.py[line:38] - INFO: mean_loss: 0.05
+2023-08-04 14:52:26,801 - train.py[line:44] - INFO: Stating to evaluate .........................
+2023-08-04 14:52:56,389 - train.py[line:58] - INFO: Got 4977/5000 with accuracy 99.54
+2023-08-04 14:52:56,389 - utils.py[line:63] - INFO: Starting to save the best model...............
+2023-08-04 14:52:56,687 - train.py[line:115] - INFO: saved the best model with accuracy 99.54
+2023-08-04 14:53:10,730 - train.py[line:33] - INFO: Epoch [2/20], Step [100/1250], LR = 0.001, Loss = 0.0371
+2023-08-04 14:53:24,802 - train.py[line:33] - INFO: Epoch [2/20], Step [200/1250], LR = 0.001, Loss = 0.0311
+2023-08-04 14:53:39,011 - train.py[line:33] - INFO: Epoch [2/20], Step [300/1250], LR = 0.001, Loss = 0.0206
+2023-08-04 14:53:53,081 - train.py[line:33] - INFO: Epoch [2/20], Step [400/1250], LR = 0.001, Loss = 0.0174
+2023-08-04 14:54:07,394 - train.py[line:33] - INFO: Epoch [2/20], Step [500/1250], LR = 0.001, Loss = 0.0253
+2023-08-04 14:54:21,637 - train.py[line:33] - INFO: Epoch [2/20], Step [600/1250], LR = 0.001, Loss = 0.0262
+2023-08-04 14:54:35,712 - train.py[line:33] - INFO: Epoch [2/20], Step [700/1250], LR = 0.001, Loss = 0.0277
+2023-08-04 14:54:49,936 - train.py[line:33] - INFO: Epoch [2/20], Step [800/1250], LR = 0.001, Loss = 0.0251
+2023-08-04 14:55:04,163 - train.py[line:33] - INFO: Epoch [2/20], Step [900/1250], LR = 0.001, Loss = 0.0196
+2023-08-04 14:55:18,604 - train.py[line:33] - INFO: Epoch [2/20], Step [1000/1250], LR = 0.001, Loss = 0.0178
+2023-08-04 14:55:32,698 - train.py[line:33] - INFO: Epoch [2/20], Step [1100/1250], LR = 0.001, Loss = 0.0352
+2023-08-04 14:55:46,739 - train.py[line:33] - INFO: Epoch [2/20], Step [1200/1250], LR = 0.001, Loss = 0.0116
+2023-08-04 14:55:53,835 - train.py[line:38] - INFO: mean_loss: 0.02
+2023-08-04 14:55:53,835 - train.py[line:44] - INFO: Stating to evaluate .........................
+2023-08-04 14:56:23,766 - train.py[line:58] - INFO: Got 4977/5000 with accuracy 99.54
+2023-08-04 14:56:38,064 - train.py[line:33] - INFO: Epoch [3/20], Step [100/1250], LR = 0.001, Loss = 0.0148
+2023-08-04 14:56:52,481 - train.py[line:33] - INFO: Epoch [3/20], Step [200/1250], LR = 0.001, Loss = 0.0158
+2023-08-04 14:57:06,985 - train.py[line:33] - INFO: Epoch [3/20], Step [300/1250], LR = 0.001, Loss = 0.0219
+2023-08-04 14:57:21,045 - train.py[line:33] - INFO: Epoch [3/20], Step [400/1250], LR = 0.001, Loss = 0.0208
+2023-08-04 14:57:35,291 - train.py[line:33] - INFO: Epoch [3/20], Step [500/1250], LR = 0.001, Loss = 0.0248
+2023-08-04 14:57:49,360 - train.py[line:33] - INFO: Epoch [3/20], Step [600/1250], LR = 0.001, Loss = 0.0173
+2023-08-04 14:58:03,574 - train.py[line:33] - INFO: Epoch [3/20], Step [700/1250], LR = 0.001, Loss = 0.0168
+2023-08-04 14:58:17,629 - train.py[line:33] - INFO: Epoch [3/20], Step [800/1250], LR = 0.001, Loss = 0.0211
+2023-08-04 14:58:31,692 - train.py[line:33] - INFO: Epoch [3/20], Step [900/1250], LR = 0.001, Loss = 0.0268
+2023-08-04 14:58:46,112 - train.py[line:33] - INFO: Epoch [3/20], Step [1000/1250], LR = 0.001, Loss = 0.0229
+2023-08-04 14:59:00,175 - train.py[line:33] - INFO: Epoch [3/20], Step [1100/1250], LR = 0.001, Loss = 0.0342
+2023-08-04 14:59:14,384 - train.py[line:33] - INFO: Epoch [3/20], Step [1200/1250], LR = 0.001, Loss = 0.0182
+2023-08-04 14:59:21,621 - train.py[line:38] - INFO: mean_loss: 0.02
+2023-08-04 14:59:21,621 - train.py[line:44] - INFO: Stating to evaluate .........................
+2023-08-04 14:59:52,822 - train.py[line:58] - INFO: Got 4979/5000 with accuracy 99.58
+2023-08-04 14:59:52,822 - utils.py[line:63] - INFO: Starting to save the best model...............
+2023-08-04 14:59:53,130 - train.py[line:115] - INFO: saved the best model with accuracy 99.58
+2023-08-04 15:00:08,013 - train.py[line:33] - INFO: Epoch [4/20], Step [100/1250], LR = 0.001, Loss = 0.0185
+2023-08-04 15:00:22,437 - train.py[line:33] - INFO: Epoch [4/20], Step [200/1250], LR = 0.001, Loss = 0.0252
+2023-08-04 15:00:37,035 - train.py[line:33] - INFO: Epoch [4/20], Step [300/1250], LR = 0.001, Loss = 0.0139
